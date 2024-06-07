@@ -1,0 +1,330 @@
+body{
+    background-color: rgb(7, 7, 7);
+   
+}
+* {
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+#Prestige{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+#Redirects{
+    grid-column: 1 / -1; /* Span all columns */
+    grid-row: 1; /* Align to the first row */
+    padding: 10px;
+    -webkit-text-fill-color: #E852FF;
+    margin: 10px;
+    height: 10vh;
+}
+.Redirect{
+    display: flex;
+    grid-template-columns: repeat(5, 1fr); /* 1x4 grid */
+    grid-gap: 100px; /* Adjust spacing between items */
+    float: right;
+    
+}
+.UnderLine{
+    position: relative;
+    text-decoration: none;
+    -webkit-text-fill-color: #E852FF;
+}
+.UnderLine::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -10px;
+    background-color: currentColor;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.5s ease-in-out; 
+    background-color: #E852FF;
+}
+.UnderLine:hover::after{
+    width: 100%;
+}
+
+/* about me :3 */
+
+.about{
+    text-align: center;
+    margin-right: 18px;
+    -webkit-text-fill-color: rgb(225, 225, 225);
+    height: 100vh;
+}
+.about span{
+    -webkit-text-fill-color: #E852FF;
+}
+.Picture{
+    margin: 23px ;
+}
+
+#pfp{
+    width: 500px;
+    border-radius: 20px;
+    position: relative;
+    float: left;
+}
+
+/*--Achievements*/
+
+#Achievement{
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-text-fill-color: #E852FF;
+    justify-content: center;
+    display: flex;
+}
+
+.achievements{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+#Achievement h1 {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+#theachievement,#theGoals,#thefacts,#theaboutme,#theguests{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    -webkit-text-fill-color: rgb(231, 231, 231);
+    font-size: 50px;
+}
+#Texts2{
+    -webkit-text-fill-color: rgb(231, 231, 231);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#Texts{
+    width: 700px;
+    font-size: 30px;
+    height: 60vh;
+}
+
+/* goals */
+#Goal{
+    margin: 10px;
+    -webkit-text-fill-color: #E852FF;
+}
+.Goals{
+    -webkit-text-fill-color: #E852FF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+#Goal h2{
+    background-color: rgb(23, 23, 23);
+    width: 320px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Goal h3 {
+    background-color: rgb(23, 23, 23);
+    width: 320px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Goal span{
+    -webkit-text-fill-color: rgb(231, 231, 231);
+}
+
+#a{
+    border: #E852FF solid;
+    height: 500px;
+}
+#b{
+    border: #E852FF solid;
+    border-bottom: 25px #E852FF solid;
+    height: 475px;
+}
+#c{
+    border: #E852FF solid;
+    border-bottom: 50px #E852FF solid;
+    height: 450px;
+}
+#d{
+    border: #E852FF solid;
+    border-bottom: 50px #E852FF solid;
+    height: 450px;
+}
+
+#Goal h3:hover {
+    background-color: #E852FF;
+    -webkit-text-fill-color: rgb(231, 231, 231); 
+    margin-top: 5px;
+    transition: 0.25s ease;
+}
+#Goal h2:hover{
+    background-color: #E852FF;
+    -webkit-text-fill-color: rgb(231, 231, 231); 
+    margin-top: 5px;
+    transition: 0.25s ease;
+    
+}
+
+#Goal h4 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 30px;
+    height: 60vh;
+    -webkit-text-fill-color: rgb(231, 231, 231);
+}
+#blank{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    -webkit-text-fill-color: rgb(7, 7, 7);
+}
+
+/* Fun Facts */
+
+#FunFact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.FunFacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+
+#FunFact h1 {
+    background-color: rgb(23, 23, 23);
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-text-fill-color: #E852FF;
+    font-family: sans-serif;
+}
+#FunFact span{
+    -webkit-text-fill-color: rgb(225, 225, 225);
+    display: flex;
+    text-align: bottom;
+    font-size: 22px;
+    margin: 25px;
+}
+#Daily_Schedule{
+    -webkit-text-fill-color: #E852FF;
+    width: 1px;
+    top: 100px;
+    right:0px;
+}
+
+/*Special Guest*/
+
+#SpecialGuest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specialguests{
+    grid-template-columns: repeat(3, 1fr);
+
+
+    grid-gap: 220px;
+    display: grid;
+}
+
+/* Noob */
+
+#Noob,#Yukie,#Silly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-fill-color: #E852FF;
+    margin: 20px;
+}
+
+#Noob h3,#Yukie h3,#Silly h3{
+    margin-top: -50px;
+}
+
+#Noob h4,#Yukie h4,#Silly h4 {
+    margin-bottom: 20px;
+    width: 100px;
+    -webkit-text-fill-color: rgb(225, 225, 225);
+}
+
+#Noob img, #Yukie img,#Silly img {
+    border-radius: 50%;
+}
+
+/* Code */
+#container{
+    margin: 50px;
+}
+#Code2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Submit2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+#Code{
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    -webkit-text-fill-color: #E852FF;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    
+}
+#Submit{
+    height: 75px;
+    width: 250px;
+    border: none;
+    outline: 2px solid #E852FF;
+    background: none;
+    border-radius: 5px;
+    -webkit-text-fill-color: #E852FF;
+    transition: 0.5s ease;
+}
+#Submit{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#Submit:hover{
+    background-color: #E852FF;
+    -webkit-text-fill-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+#Textcontainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#Text123{
+    -webkit-text-fill-color: rgb(225, 225, 225);
+}
